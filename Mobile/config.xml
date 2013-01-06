@@ -20,10 +20,15 @@
 <feature name="http://api.phonegap.com/1.0/network"/>
 <feature name="http://api.phonegap.com/1.0/notification"/>
 
-    <preference name="phonegap-version" value="2.1.0" />
-    <preference name="orientation"      value="default" />
+    <preference name="phonegap-version" value="2.2.0" />
+    <preference name="orientation"      value="portrait" />
     <preference name="target-device"    value="universal" />
-    <preference name="fullscreen"       value="false" />
+    <preference name="fullscreen"       value="true" />
+    <preference name="stay-in-webview" value="true" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="true" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="splash-screen-duration" value="10000" />
 
     <icon src="icon.png" />
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:density="ldpi" />
@@ -40,13 +45,8 @@
     <icon src="res/icon/windows-phone/icon-48.png"  gap:platform="winphone" />
     <icon src="res/icon/windows-phone/icon-173.png" gap:platform="winphone"   gap:role="background" />
 
-    <gap:splash src="res/screen/android/screen-ldpi-portrait.png"  gap:platform="android" gap:density="ldpi" />
-    <gap:splash src="res/screen/android/screen-mdpi-portrait.png"  gap:platform="android" gap:density="mdpi" />
-    <gap:splash src="res/screen/android/screen-hdpi-portrait.png"  gap:platform="android" gap:density="hdpi" />
+    
     <gap:splash src="res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
-    <gap:splash src="res/screen/android/screen-ldpi-landscape.png"  gap:platform="android" gap:density="ldpi" />
-    <gap:splash src="res/screen/android/screen-mdpi-landscape.png"  gap:platform="android" gap:density="mdpi" />
-    <gap:splash src="res/screen/android/screen-hdpi-landscape.png"  gap:platform="android" gap:density="hdpi" />
     <gap:splash src="res/screen/android/screen-xhdpi-landscape.png" gap:platform="android" gap:density="xhdpi" />
     <gap:splash src="res/screen/blackberry/screen-225.png"         gap:platform="blackberry" />
     <gap:splash src="res/screen/ios/screen-iphone-portrait.png"    gap:platform="ios"     width="320" height="480" />
