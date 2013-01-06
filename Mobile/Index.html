@@ -117,6 +117,7 @@ body {
 		<a id="minus" data-icon="minus" data-iconpos="notext" data-role="button" href="#">
 		</a></div>
 </div>
+<!--Search Dialog-->
 <div id="searchpage" data-role="dialog">
 	<div data-role="header">
 		<h1>Search</h1>
@@ -127,6 +128,7 @@ body {
 	<ul id="search_results" data-inset="true" data-role="listview">
 	</ul>
 </div>
+<!--Layers Dialog-->
 <div id="layerspage" data-role="dialog" style="height: 200px;">
 	<div data-role="header">
 		<h1>Layers</h1>
@@ -177,10 +179,9 @@ body {
 	<div data-role="content">
 		<strong>Optimum Conditions for Cotton Seed Planting</strong>: <br>
 		<strong><br>Reference</strong>:
-		<a data-rel="dialog" data-transition="pop" href="Planting-and-Replanting-Decisions-2007.pdf">
-		Cotton Physiology Today Vol. 13 No.1 April 2007 </a><br><br>Soil Temp at 
-		2 in depth must be greater than or equal to 68&#65533;F . <br><br>Minimum Air Temp 
-		for next 5 days must be greater than 50&#65533;F . <br><br>5 Day Accum. of DD60 
+		<a href="#pdfDialog">Cotton Physiology Today Vol. 13 No.1 April 2007 </a><br><br>Soil Temp at 
+		2 in depth must be greater than or equal to 68&deg;F . <br><br>Minimum Air Temp 
+		for next 5 days must be greater than 50&deg;F . <br><br>5 Day Accum. of DD60 
 		Forecasted:<br>&nbsp;&lt; 10 : Very Poor <br>11-15: Poor <br>16-25: Marginal
 		<br>25-50: Good <br>&gt;51 : Very Good <br><br>In areas without Mesonet soil 
 		sensors, users will see &quot;No Forecast Available&quot; . However the DD60 Forecast 
@@ -204,7 +205,15 @@ body {
 		<img alt="WTm, TTU" height="34" src="wtmlogo.png" width="67">West Texas 
 		Mesonet<br></div>
 </div>
+<!--pdf dialog-->
+<div id="pdfDialog" data-role="dialog"style="overflow:scroll; width:100%; height:1000px">
+<div data-role="header">
+		<h1>Cotton Physiology Today Vol. 13 No.1 April 2007</h1>
+	</div>
+<div data-role="content">
 
+<iframe  style="width:100%;height:100%;" src="Planting-and-Replanting-Decisions-2007.pdf"></iframe></div>
+</div>
 </body>
 
 </html>
