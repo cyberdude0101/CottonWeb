@@ -24,9 +24,9 @@
     <preference name="orientation"      value="default" />
     <preference name="fullscreen"       value="false" />
     <preference name="exit-on-suspend" value="true" />
-   <preference name="target-device"    value="universal" />
+    <preference name="show-splash-screen-spinner" value="true" />
     <preference name="splash-screen-duration" value="10000" />
-  
+    <preference name="stay-in-webview" value="false" />
 
 <access origin="http://www.cotton.org/" />
 <access origin="http://www.cotton.org/" subdomains="true" />
