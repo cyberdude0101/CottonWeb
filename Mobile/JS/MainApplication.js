@@ -27,7 +27,7 @@ var sm = new OpenLayers.Projection("EPSG:900913");
 				return feature.layer.options.getIcon(feature.attributes.station);
 			},
 			myCustomLabel:  function(feature) {
-			    var Farenheit = (feature.attributes.station.main.temp-273.15)*.18+32;
+			    var Farenheit = ((feature.attributes.station.main.temp-273.15)*1.8)+32;
 				return  Math.round(Farenheit) + '°F';
 			}
 
@@ -93,7 +93,7 @@ var init = function (onSelectFeatureFunction) {
         {type: google.maps.MapTypeId.HYBRID, numZoomLevels: 22, visibility: true}
     );
 // Make weather layer. Server clastering of markers is using.
-	var city = new OpenLayers.Layer.Vector.OWMWeather("Weather", {styleMap: WeatherStyleMap});
+	var city = new OpenLayers.Layer.Vector.OWMWeather("Current Weather", {styleMap: WeatherStyleMap});
 
          
 var styleMap = new OpenLayers.StyleMap(OpenLayers.Util.applyDefaults(
@@ -158,9 +158,10 @@ var select = new OpenLayers.Layer.Vector("Selected Grid",{styleMap: styleMap});
           
         ],
         layers: [
-           city,
+           
 			 select,
-        	 nwsgrid,
+			 city,
+        	 nwsgrid,        	 
              geolocategraphic,
              ghyb, 
              gphy,
